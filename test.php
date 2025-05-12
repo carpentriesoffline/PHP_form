@@ -33,6 +33,7 @@
     </section>
     <form class="gform" action="action.php" method="post">
         <div class="form-elements">
+            <!--
             <fieldset>
                 <label for="name">Full Name</label>
                 <input id="name" aria-label="name" type="text" name="name" placeholder="Not required" >
@@ -40,7 +41,7 @@
                 <input id="institution" aria-label="institution" type="text" name="institution" placeholder="Not required" >
 
             </fieldset>
-
+            -->
             <fieldset id="questionnaire">
                 <label for="difficulty">How easy/difficult was it to connect to carpentries-offline? (1-Easiest, 5-Very difficult)</label>
                 <input id="difficulty" aria-label="difficulty" type="range" name="difficulty" min="1" max="5"
