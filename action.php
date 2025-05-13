@@ -6,7 +6,7 @@ $difficulty = $_POST["difficulty"];
 $howlong = $_POST["howlong"];
 $device  = $_POST["device"];
 $comments = $_POST["comments"];
-$entry = $file . "," . $name . "," . $institution . "," . $difficulty . "," . $howlong . "\n";
+$entry = $difficulty . "," . $howlong . "," . $device . "," . $comments .  "\n";
 // Write the contents to the file,
 // using the FILE_APPEND flag to append the content to the end of the file
 // and the LOCK_EX flag to prevent anyone else writing to the file at the same time
@@ -40,9 +40,12 @@ file_put_contents($file, $entry, FILE_APPEND | LOCK_EX);
     </section>
     <section>
         <h3>Your resonses were:</h3>
-        <p>Name: <?php echo htmlspecialchars($_POST['name']); ?>.</br>
+        <p>
+	<!--
+	Name: <?php echo htmlspecialchars($_POST['name']); ?>.</br>
         Institution: <?php echo htmlspecialchars($_POST['institution']); ?>.</br>
-        Difficulty: <?php echo (int) $_POST['difficulty']; ?>.</br>
+        -->
+	Difficulty: <?php echo (int) $_POST['difficulty']; ?>.</br>
         How long: <?php echo htmlspecialchars($_POST['howlong']); ?>.</br>
         Device: <?php echo htmlspecialchars($_POST['device']); ?>.</br>
         Comments: <?php echo htmlspecialchars($comments); ?>.</p>
