@@ -1,12 +1,13 @@
 <?php
-$file = 'people.txt';
+$file = 'results.txt';
 $name = $_POST["name"];
 $institution = $_POST["institution"];
 $difficulty = $_POST["difficulty"];
 $howlong = $_POST["howlong"];
 $device  = $_POST["device"];
 $comments = $_POST["comments"];
-$entry = $difficulty . "," . $howlong . "," . $device . "," . $comments .  "\n";
+$timestamp = date("Y-m-d H:i:s",time());
+$entry = $timestamp . "," . $difficulty . "," . $howlong . "," . $device . "," . $comments .  "\n";
 // Write the contents to the file,
 // using the FILE_APPEND flag to append the content to the end of the file
 // and the LOCK_EX flag to prevent anyone else writing to the file at the same time
