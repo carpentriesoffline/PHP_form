@@ -45,8 +45,8 @@
             <fieldset id="questionnaire">
                 <label for="difficulty">How easy/difficult was it to connect to carpentries-offline? (1-Easiest, 5-Very difficult)</label>
                 <input id="difficulty" aria-label="difficulty" type="range" name="difficulty" min="1" max="5"
-                       value="50" class="slider"  oninput="this.nextElementSibling.value = this.value">
-                <output style="float:right">0</output>
+                       value="3" class="slider"  oninput="this.nextElementSibling.value = this.value">
+                <output style="float:right">3</output>
                 <label for="howlong">How long, in minutes, did it take download the file?</label>
                 <input id="howlong" aria-label="howlong" type="text" name="howlong" placeholder="enter the number of minutes" >
                 <label for="device">What device are you currently using?</label>
